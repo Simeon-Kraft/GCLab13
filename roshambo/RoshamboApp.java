@@ -55,8 +55,8 @@ public class RoshamboApp {
 
 		Enum u = players.get(0).generateRoshambo();
 		Enum v = players.get(1).generateRoshambo();
-		System.out.println(players.get(0).getName() + " threw " + u);
-		System.out.println(players.get(1).getName() + " threw " + v);
+		System.out.println(players.get(0).getName() + " threw " + u + "!");
+		System.out.println(players.get(1).getName() + " threw " + v + "!");
 
 		if (u == v) {
 			System.out.println("Its a draw!");
@@ -86,6 +86,8 @@ public class RoshamboApp {
 	}
 
 	public static void greeting(Scanner scnr) {
+		
+		
 		System.out.println("Welcome to Rock Paper Scissors! Two will enter; only one will leave!");
 		System.out.println("Enter your name, O valient warrior!");
 		String name = scnr.nextLine();
@@ -94,7 +96,7 @@ public class RoshamboApp {
 	}
 
 	public static void opponent(Scanner scnr) {
-		System.out.println("Choose your opponent! (Enter Brock or Dale)");
+		System.out.println("Choose your antagonist! (Enter Brock or Dale)");
 		String opp = scnr.nextLine();
 
 		while (!opp.equalsIgnoreCase("Brock") && !opp.equalsIgnoreCase("Dale")) {

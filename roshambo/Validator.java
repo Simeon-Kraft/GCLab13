@@ -18,4 +18,16 @@ public class Validator {
 		return input;
 	}
 	
+	public static String getName(Scanner scnr) {
+		
+		System.out.println("Enter your name, O valient warrior!");
+		String name = scnr.nextLine();
+		while(!name.matches("[a-zA-Z]")) {
+			System.out.println("Please enter an intelligible name: ");
+			name = scnr.nextLine();
+		}
+		
+		return name;
+	}
+	
 }
